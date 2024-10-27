@@ -1,0 +1,20 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://example.com/soap"
+           targetNamespace="http://example.com/soap" elementFormDefault="qualified">
+
+    <xs:element name="CalcularEdadRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="anioNacimiento" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="CalcularEdadResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="edad" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+</xs:schema>
